@@ -7,7 +7,7 @@ services:
       - "8443:8443"
     environment:
       - SINGLE_USER_CREDENTIALS_USERNAME=admin
-      - SINGLE_USER_CREDENTIALS_PASSWORD=SuaSenhaForte123!
+      - SINGLE_USER_CREDENTIALS_PASSWORD=SenhaForte123!
     networks:
       - nifi-net
 
@@ -15,7 +15,7 @@ services:
     image: postgres:15-alpine
     container_name: postgres-container
     environment:
-      - POSTGRES_DB=db
+      - POSTGRES_DB=dbetl
       - POSTGRES_USER=admin
       - POSTGRES_PASSWORD=segredo
     ports:

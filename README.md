@@ -23,3 +23,15 @@ Parar os projetos:
 ```bash
 docker compose down
 ```
+### Acesso
+Quando tiverem subido normalmente, o nifi deve ser acessivel no link https://localhost:8443/login
+
+#### Login e Senha default's do projeto:
+##### Nifi
+- Login: admin
+- Senha: SenhaForte123!
+
+##### Postgres
+- Database: dbetl
+- Login: admin
+- Senha: segredo

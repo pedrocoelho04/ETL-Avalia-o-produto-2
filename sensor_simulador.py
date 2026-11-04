@@ -16,16 +16,16 @@ try:
             "latitude": random.randint(-90, 90),
             "longitude": random.randint(-180, 180),
             "data": fake.date(),
-            "hora": fake.hour(),
+            "hora": fake.time(),
         }
         
         response = requests.post(url, json=payload, timeout=5)
         
         if response.status_code == 201 or response.status_code == 200:
-            print("Entidade enviada com sucesso")
+            print("\nEntidade enviada com sucesso")
         else:
-            print("Falha no envio do pacote")
-            print
+            print("\nFalha no envio do pacote")
+            print("\n")
             print(response.json())
 
 except KeyboardInterrupt:
