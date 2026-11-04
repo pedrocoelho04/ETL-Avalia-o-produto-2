@@ -4,7 +4,7 @@ from faker import Faker
 
 fake = Faker()
 
-url = 'http://localhost:0000/'
+url = 'http://localhost:8443/requests'
 
 print("\n Iniciando geração de requisições de usuarios - Pressione Crtl+C para parar...")
 

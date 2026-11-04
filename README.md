@@ -12,3 +12,14 @@ O projeto irá procurar realizar a demonstração pratica de uma integração e 
 
 ### Geradores de Carga e Simulação
 - Pyhton
+
+## Operando o projeto
+Para iniciar o projeto com o docker:
+```bash
+docker compose up
+```
+
+Parar os projetos:
+```bash
+docker compose down
+```
