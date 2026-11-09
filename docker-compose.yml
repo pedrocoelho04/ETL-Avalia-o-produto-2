@@ -5,6 +5,9 @@ services:
     container_name: nifi-container
     ports:
       - "8443:8443"
+      - "8080:8080"
+    volumes:
+      - ./driver:/opt/nifi/nifi-current/lib/postgresql-driver
     environment:
       - SINGLE_USER_CREDENTIALS_USERNAME=admin
       - SINGLE_USER_CREDENTIALS_PASSWORD=SenhaForte123!
@@ -19,7 +22,7 @@ services:
       - POSTGRES_USER=admin
       - POSTGRES_PASSWORD=segredo
     ports:
-      - "5433:5433"
+      - "5434:5432"
     volumes:
       - pgdata:/var/lib/postgresql/data
     networks:

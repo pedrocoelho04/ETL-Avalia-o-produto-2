@@ -35,3 +35,21 @@ Quando tiverem subido normalmente, o nifi deve ser acessivel no link https://loc
 - Database: dbetl
 - Login: admin
 - Senha: segredo
+
+### Portas do projeto
+| Porta | Servico |
+|---|---|
+| 8443 | UI / API do NiFi (https) |
+| 8080 | ListenHTTP — entrada dos dados dos sensores |
+| 5434 | PostgreSQL (mapeada para a 5432 interna; 5432/5433 ja estavam em uso na maquina) |
+
+### Simulador de sensores
+```bash
+pip install -r requirements.txt
+python3 sensor_simulador.py
+```
+Confira os dados no banco:
+```bash
+docker exec postgres-container psql -U admin -d dbetl \
+  -c "SELECT * FROM sensor_readings ORDER BY id DESC LIMIT 5;"
+```
