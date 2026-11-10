@@ -39,7 +39,6 @@ Quando tiverem subido normalmente, o nifi deve ser acessivel no link https://loc
 ### Portas do projeto
 | Porta | Servico |
 |---|---|
-| 8443 | UI / API do NiFi (https) |
 | 8080 | ListenHTTP — entrada dos dados dos sensores |
 | 5434 | PostgreSQL (mapeada para a 5432 interna; 5432/5433 ja estavam em uso na maquina) |
 

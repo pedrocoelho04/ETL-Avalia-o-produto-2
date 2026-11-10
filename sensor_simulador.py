@@ -12,7 +12,7 @@ def log(msg):
 
 fake = Faker()
 
-URL_NIFI = "http://localhost:8080/"
+URL_NIFI = "http://localhost:8080/contentListener"
 
 log("\nIniciando geracao de leituras de sensores - Pressione Ctrl+C para parar...")
 
